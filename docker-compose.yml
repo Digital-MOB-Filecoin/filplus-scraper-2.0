@@ -1,0 +1,87 @@
+
+services:
+  backend:
+    container_name: backend-scraper
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/usr/src/app
+      - ../backend-node-modules:/usr/src/app/node_modules
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+      - 9229:9229
+    # command: ./docker/dev.command.sh
+    entrypoint: ['sh', './docker/dev.command.sh']
+    env_file:
+      - .env
+    networks:
+      - webnet-scraper
+    depends_on:
+      - postgres-scraper
+      - rabbitmq
+
+  # scraper-consumer:
+  #   container_name: scraper-consumer
+  #   build:
+  #     context: .
+  #     target: development
+  #   volumes:
+  #     - .:/usr/src/app
+  #     - backend-node-consumer-modules:/usr/src/app/node_modules
+  #   ports:
+  #     - 4000:${APP_PORT}
+  #     - 9230:9229
+  #   # command: ./docker/dev.command.sh
+  #   entrypoint: ['sh', './docker/dev.command.consumer.sh']
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - webnet-scraper
+  #   depends_on:
+  #     - postgres-scraper
+  #     - rabbitmq
+
+  postgres-scraper:
+    container_name: postgres-scraper
+    image: postgres:12.2
+    networks:
+      - webnet-scraper
+    environment:
+      TZ: GMT
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE_NAME}
+      PG_DATA: /var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    volumes:
+      - ../pgdata:/var/lib/postgresql/data
+
+  rabbitmq:
+    image: bitnamilegacy/rabbitmq:4.1.3
+    container_name: rabbitmq
+    volumes:
+      - ../rabbitmqdata_etc/:/etc/rabbitmq/
+      - ../rabbitmqdata_lib/:/var/lib/rabbitmq/
+      - ../rabbitmqdata_log/:/var/log/rabbitmq/
+    environment:
+      RABBITMQ_ERLANG_COOKIE: ${RABBITMQ_ERLANG_COOKIE}
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
+    ports:
+      - 15672:15672
+    networks:
+      - webnet-scraper
+
+networks:
+  webnet-scraper:
+    name: webway
+    driver: bridge
+volumes:
+  pgdata:
+  rabbitmqdata_etc:
+  rabbitmqdata_lib:
+  rabbitmqdata_log:
+  backend-node-modules:
+  backend-node-consumer-modules:

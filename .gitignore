@@ -1,0 +1,21 @@
+
+node_modules/
+.env
+
+dist/
+
+deals.txt
+
+/.idea
+
+src/modules/scraper/github/discussion graphql query
+
+.env hyperspace
+
+.env copy
+
+src/data/mainnet-sample.ndjson
+
+src/data/
+
+submodules/filecoin-plus-scraper-entities/

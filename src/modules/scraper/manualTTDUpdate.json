@@ -1,0 +1,706 @@
+[
+  {
+    "client": "f01151139",
+    "notary": "f01105790",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/12",
+    "mcid": "bafy2bzacebjt2w6plpjra746wjvlbel23ya2f64jsgbnlzuo2vi3h6qrmd3e4",
+    "startCommId": 899112487,
+    "stopCommId": 927253645
+  },
+  {
+    "client": "f01859966",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/392",
+    "mcid": "bafy2bzacebi63ye32mlq3dhfn6favtubaublarxmog5yzdyad3m2dhtwbgdsk",
+    "startCommId": 1303308239,
+    "stopCommId": 1304957698
+  },
+  {
+    "client": "f01940945",
+    "notary": "f01924196",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/955",
+    "mcid": "bafy2bzacecjphqfc6s26jbgy67qu3i2feye4zeggivxj4vmqrzxqkejwtsfiq",
+    "startCommId": 1303308245,
+    "stopCommId": 1309530307
+  },
+  {
+    "client": "f01851513",
+    "notary": "f01849047",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/326",
+    "mcid": "bafy2bzacecwgjtqjpjrqshtoraz33nqowf7or3aqpfjd2m5u3aoxbl6aqtob4",
+    "startCommId": 1331176442,
+    "stopCommId": 1332781967
+  },
+  {
+    "client": "f01924388",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/991",
+    "mcid": "bafy2bzacedrcrpwbktfy42q2cq5gkvkfarttlwbubrbro3ykcfss5qac7pmji",
+    "startCommId": 1331199914,
+    "stopCommId": 1407682052
+  },
+  {
+    "client": "f01901107",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/391",
+    "mcid": "bafy2bzacedyvkp2wxekl77dpdnyto6jylwp7ilr6a3qo7mobmnosm2o2xmksq",
+    "startCommId": 1409970815,
+    "stopCommId": 1418930651
+  },
+  {
+    "client": "f02009588",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1545",
+    "mcid": "bafy2bzaceawcp65ppfb2okrbkiycoi2kfmp2zuclnt7xrsrpwgm7g7qn5n6xw",
+    "startCommId": 1381089643,
+    "stopCommId": 1407588704
+  },
+  {
+    "client": "f01901107",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/391",
+    "mcid": "bafy2bzacedp4kauzb5t4sntv4e5ki6ieoun5fzjsl66jjk4t3qaoknutsrsxq",
+    "startCommId": 1330069903,
+    "stopCommId": 1330992451
+  },
+  {
+    "client": "f01513502",
+    "notary": "f01786587",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/305",
+    "mcid": "bafy2bzacebgwxsp43vgto2gqfulqb6q7zqnecucbfuql4zeissqwaxinu674k",
+    "startCommId": 1128552375,
+    "stopCommId": 1133552809
+  },
+  {
+    "client": "f01037760",
+    "notary": "f01155654",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/3",
+    "mcid": "bafy2bzacedlcfuis32bvyzo2ed6kyxjrzjyrcdejzhmjd5xhrpxdjivjzmu54",
+    "startCommId": 902301688,
+    "stopCommId": 902632701
+  },
+  {
+    "client": "f0397376",
+    "notary": "f01322399",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/44",
+    "mcid": "bafy2bzaceb26hswaeyheos6qrjsmrjw6yanee2lpcc2l7ihsvh3c7j33ztyfc",
+    "startCommId": 931484539,
+    "stopCommId": 931784232
+  },
+  {
+    "client": "f01974601",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1267",
+    "mcid": "bafy2bzacedykwneqdhqcw6dz42htvfzln544rkzsr2c5oaobceuycbdbe57tk",
+    "startCommId": 1354737095,
+    "stopCommId": 1359026481
+  },
+  {
+    "client": "f01974717",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1266",
+    "mcid": "bafy2bzacecfbcn7q3ezhdwycgmxckxpcyqj7q3xcym562zmaggjsl52fegg7w",
+    "startCommId": 1353032351,
+    "stopCommId": 1359021248
+  },
+  {
+    "client": "f01251071",
+    "notary": "f01185440",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/20",
+    "mcid": "bafy2bzaceat742riz2zj4hrvezvcr4x7zzvyoscvjlk77uvwg3ft6zrs3ut5e",
+    "startCommId": 915067847,
+    "stopCommId": 916742223
+  },
+  {
+    "client": "f01037760",
+    "notary": "f01322563",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/46",
+    "mcid": "bafy2bzacea2gxhmthpwvx6ok53t26y4xel67l22ya6p3vvtzp2wdeqqnfyx32",
+    "startCommId": 933944121,
+    "stopCommId": 936154659
+  },
+  {
+    "client": "f01513503",
+    "notary": "f01786582",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/281",
+    "mcid": "bafy2bzacebeuznhd2xdx3e4vqstdfziaiaoqebcgnbtycpl53wrpwxyqruquk",
+    "startCommId": 1145750472,
+    "stopCommId": 1147043709
+  },
+  {
+    "client": "f01872946",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/419",
+    "mcid": "bafy2bzacecgc5v37xeteixzycfy6g4ez7ieps5g56m2jm75kmeugsfm5dgdxc",
+    "startCommId": 1217798329,
+    "stopCommId": 1218301870
+  },
+  {
+    "client": "f01787692",
+    "notary": "f01782465",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/293",
+    "mcid": "bafy2bzacebnmnn2qrv6cpdqig5hzas4euvrofeihlhgyud36tmjjtqbdorfeg",
+    "startCommId": 1124674164,
+    "stopCommId": 1125978913
+  },
+  {
+    "client": "f01923695",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/537",
+    "mcid": "bafy2bzaced4vrr6j4azxkpa2hm3mks776enh6f5ooc5x7u6evcgr4ptc2yahw",
+    "startCommId": 1291166879,
+    "stopCommId": 1291390448
+  },
+  {
+    "client": "f01224308",
+    "notary": "f01169319",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/7",
+    "mcid": "bafy2bzaced6qkomzbjglldabhbpibwoy27k773cyaluyh6nak5b6dvsdlqc6s",
+    "startCommId": 912235912,
+    "stopCommId": 912453818
+  },
+  {
+    "client": "f0397376",
+    "notary": "f01105812",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/2",
+    "mcid": "bafy2bzacea3aoq44qfocc66n5u5myf4se56huagzj64ykeguvjonrk3ulogqi",
+    "startCommId": 897879483,
+    "stopCommId": 899359854
+  },
+  {
+    "client": "f01762699",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/278",
+    "mcid": "bafy2bzacebpecdrway4xguwzmrfan2pweoydre5yxp5aisiriyuxl35xo2skg",
+    "startCommId": 1303308254,
+    "stopCommId": 1303820266
+  },
+  {
+    "client": "f01819389",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/335",
+    "mcid": "bafy2bzacec57zjsykfe3cbj2jbprjlvimeevqpwtz4zrpea7sfxcyxpcdzese",
+    "startCommId": 1239179909,
+    "stopCommId": 1242474193
+  },
+  {
+    "client": "f01131298",
+    "notary": "f01157865",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/22",
+    "mcid": "bafy2bzacebcb7i4yaxmejhgdo34bmpqpai3vygnazsk4afiwaaa7cxrdz66r6",
+    "startCommId": 912212979,
+    "stopCommId": 913293778
+  },
+  {
+    "client": "f01769561",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/309",
+    "mcid": "bafy2bzacebytppsbkni6mhtgudrxdq7tt7gkfoyeaq5t7snll7evqp4bdatma",
+    "startCommId": 1291281091,
+    "stopCommId": 1291431145
+  },
+  {
+    "client": "f01943532",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1117",
+    "mcid": "bafy2bzacebfhmwcngwspggv73psb37scg6nia2dfnbkzxuizktdvzhf34d5hq",
+    "startCommId": 1288690199,
+    "stopCommId": 1288767377
+  },
+  {
+    "client": "f01817237",
+    "notary": "f01814930",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/298",
+    "mcid": "bafy2bzaceayudd67uul33li6or2s7oqjmwqp5pg2o7lcud3k2uos5jud6fsck",
+    "startCommId": 1134383477,
+    "stopCommId": 1136068535
+  },
+  {
+    "client": "f01385053",
+    "notary": "f01403237",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/77",
+    "mcid": "bafy2bzaceazi5snw5rs3ikfyhdw4fpu6xkygxrpqwihzi7azhubckhtweottm",
+    "startCommId": 1104668980,
+    "stopCommId": 1107431856
+  },
+  {
+    "client": "f01762699",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/278",
+    "mcid": "bafy2bzacedvkeveltziuu555cgjek5d6rrnv2wab5lafblbjutt367f64daxs",
+    "startCommId": 1287925060,
+    "stopCommId": 1287997505
+  },
+  {
+    "client": "f01923695",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/537",
+    "mcid": "bafy2bzacearz5tapucrtxysa7lanjlknazua3wnliwr2bgsnu4ietoy7obq2e",
+    "startCommId": 1287599700,
+    "stopCommId": 1287615589
+  },
+  {
+    "client": "f0421499",
+    "notary": "f01240081",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/14",
+    "mcid": "bafy2bzacecvpbrzynoxgw2pcujb7bbfpnk2hqgk27lbz3tp4jvcou5cpzowpw",
+    "startCommId": 922114417,
+    "stopCommId": 926780877
+  },
+  {
+    "client": "f01769561",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/309",
+    "mcid": "bafy2bzacebsxtgxn3gx37dfbfe6blxsvo6eqq6fo7tqvbd5u4bcrlitnhhveu",
+    "startCommId": 1303308227,
+    "stopCommId": 1303506583
+  },
+  {
+    "client": "f0856505",
+    "notary": "f01322631",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/54",
+    "mcid": "bafy2bzacedqh7tnno4buklla2l46ebd4psqj6c4o5djrtr6wpefgtlq6dia4c",
+    "startCommId": 1073819370,
+    "stopCommId": 1086574988
+  },
+  {
+    "client": "f01513503",
+    "notary": "f01786582",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/281",
+    "mcid": "bafy2bzaceanpefpwx76evdyvimlw6hcfcvcvtbnz3niszy5yjt37bpqpqdozw",
+    "startCommId": 1099606571,
+    "stopCommId": 1111102484
+  },
+  {
+    "client": "f01944211",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1048",
+    "mcid": "bafy2bzacecdtyyx6zu432cbsfzpbutbqi5amccckv66fxayyyqgdevjlghgwk",
+    "startCommId": 1279544704,
+    "stopCommId": 1291352875
+  },
+  {
+    "client": "f0397376",
+    "notary": "f01105812",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/2",
+    "mcid": "bafy2bzacedbeghxjdvmmjxels2noxlhecymgsgectazd7fgqjewysggc3kqnw",
+    "startCommId": 897879483,
+    "stopCommId": 899969700
+  },
+  {
+    "client": "f01037760",
+    "notary": "f01155654",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/3",
+    "mcid": "bafy2bzacebry6py7h4ilwhy7a6g3cstgdlobahsrpei7fno4amedhpgqhhk4y",
+    "startCommId": 927977259,
+    "stopCommId": 929024077
+  },
+  {
+    "client": "f01181090",
+    "notary": "f01325111",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/31",
+    "mcid": "bafy2bzacea5qz4lt2o3f6fgol4dxpoov62mo2yobbpkfqeuqmuqumwubghrdg",
+    "startCommId": 989889220,
+    "stopCommId": 1019373913
+  },
+  {
+    "client": "f0397376",
+    "notary": "f01105812",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/2",
+    "mcid": "bafy2bzacebsijncucuu4wns3x7kaztu7lfygnxuiqx5dhgjj4yezmnks3y4fa",
+    "startCommId": 897879483,
+    "stopCommId": 903415607
+  },
+  {
+    "client": "f01513502",
+    "notary": "f01786587",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/305",
+    "mcid": "bafy2bzacecwcd4sfnjm6gesi5qdf42l6oupzu72bykntq4nwy6sxlberfpyfq",
+    "startCommId": 1099604780,
+    "stopCommId": 1116925293
+  },
+  {
+    "client": "f01037760",
+    "notary": "f01155654",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/3",
+    "mcid": "bafy2bzacecarmouepyuhydykb7jogjkjmgqne6qgyowqpav53t52caw6rwb5i",
+    "startCommId": 914531904,
+    "stopCommId": 915164198
+  },
+  {
+    "client": "f01356431",
+    "notary": "f01381719",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/59",
+    "mcid": "bafy2bzacedrm6vbu3tn5eviaucwruz4d7adyhixckncqgur4kbgkx4tsjimrm",
+    "startCommId": 988435950,
+    "stopCommId": 993786780
+  },
+  {
+    "client": "f01385053",
+    "notary": "f01403237",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/77",
+    "mcid": "bafy2bzacebvq4y47nxrihrlmrswad6koegq6vi4uwx5x4t62vqtyhxroo6qk6",
+    "startCommId": 1104668980,
+    "stopCommId": 1106843694
+  },
+  {
+    "client": "f01037760",
+    "notary": "f01155654",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/3",
+    "mcid": "bafy2bzacebwtkt3rqsvri3m4eevix6mtzzihoivtcuzbs7gyzxpztv3hzcuta",
+    "startCommId": 905749535,
+    "stopCommId": 906493585
+  },
+  {
+    "client": "f01358352",
+    "notary": "f01403222",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/64",
+    "mcid": "bafy2bzacedk753a5sxc3osdd3wt4sukosutreckzo6xmd5gt5dt334w7mcjjs",
+    "startCommId": 984663999,
+    "stopCommId": 1011820154
+  },
+  {
+    "client": "f01762699",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/278",
+    "mcid": "bafy2bzaced4rvfnieg2oaqwb32aubsxwxhvf62doiczkusycf7cha7zphpkpg",
+    "startCommId": 1276758483,
+    "stopCommId": 1278469002
+  },
+  {
+    "client": "f01769561",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/309",
+    "mcid": "bafy2bzaceb5hqgn7344ikqqyaqwyz4iml7rzpdsqm6rvnmk3pcffivguqkwa6",
+    "startCommId": 1291281091,
+    "stopCommId": 1301992040
+  },
+  {
+    "client": "f01919335",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/957",
+    "mcid": "bafy2bzacecx6wsrcxrbo7duzx6ou6xihwwntfdpbigjmlp3zrvlk23l3txxyu",
+    "startCommId": 1263827536,
+    "stopCommId": 1318294964
+  },
+  {
+    "client": "f01941690",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1097",
+    "mcid": "bafy2bzaceceqovruhp5673tx2lg4efgpfftaerwawbmvytlv4sfnfq3wq2cta",
+    "startCommId": 1284533298,
+    "stopCommId": 1285013602
+  },
+  {
+    "client": "f01872946",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/419",
+    "mcid": "bafy2bzacea7xqkcuiqfkno4wn6h7mxb23s36a7xjiqeepgsciaicchflqaz4u",
+    "startCommId": 1217798329,
+    "stopCommId": 1218301397
+  },
+  {
+    "client": "f01941661",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1080",
+    "mcid": "bafy2bzacecxuf4open27na3qfkjzw2tlj33kmlgmfitkgerzluofu5zkif2pa",
+    "startCommId": 1303308225,
+    "stopCommId": 1303530923
+  },
+  {
+    "client": "f01762699",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/278",
+    "mcid": "bafy2bzaceak5nyye44643bzmcckgyfqpy5yui47jmlu7hporyuaelfxzqmkbm",
+    "startCommId": 1239179916,
+    "stopCommId": 1241444836
+  },
+  {
+    "client": "f01913737",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/919",
+    "mcid": "bafy2bzaceaccugtaszelynaoux6qgrgfc54cvs4knp4m4zp3q4eb2f3qlmzpi",
+    "startCommId": 1340325413,
+    "stopCommId": 1346169781
+  },
+  {
+    "client": "f01923695",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/537",
+    "mcid": "bafy2bzacectak226cfov7jd77laswvi2kehzw2rcrefszt44nue7cpegu3h4s",
+    "startCommId": 1291166879,
+    "stopCommId": 1301982287
+  },
+  {
+    "client": "f01762699",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/278",
+    "mcid": "bafy2bzaced3u6jcaoojn367ihdhvnwl6waouuektwz7rzngmj2lyiijcr2pls",
+    "startCommId": 1211252472,
+    "stopCommId": 1211733124
+  },
+  {
+    "client": "f01948527",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/852",
+    "mcid": "bafy2bzacecyusq5vri2u6mbrkbahnpbb7hy3r3ijsls6dunna2xv4thxk7hhm",
+    "startCommId": 1277021352,
+    "stopCommId": 1301998360
+  },
+  {
+    "client": "f0700600",
+    "notary": "f01242135",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/27",
+    "mcid": "bafy2bzaced5u23l24knyoafti3eljz2vfehe7sjdgkz7sj5coeuq4xfwatcy6",
+    "startCommId": 922095626,
+    "stopCommId": 926367143
+  },
+  {
+    "client": "f01837711",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/340",
+    "mcid": "bafy2bzaceahh7ejdwkah3jx7m2ysmuu7kfhnem7zrkmxvk7rapjwp7kdzf3iq",
+    "startCommId": 1241768563,
+    "stopCommId": 1242476978
+  },
+  {
+    "client": "f01864590",
+    "notary": "f01885534",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/425",
+    "mcid": "bafy2bzacecyxreo5cljoxddqk2st4vwkeqpfmxez6vjincia6hbqgwpaf2pnq",
+    "startCommId": 1303308259,
+    "stopCommId": 1304370945
+  },
+  {
+    "client": "f01859966",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/392",
+    "mcid": "bafy2bzaced456ros7ssxjtyhdv43fftoun4bzegyr6ic7rjoe6uer23bpmbcu",
+    "startCommId": 1303308239,
+    "stopCommId": 1304568369
+  },
+  {
+    "client": "f01882154",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/311",
+    "mcid": "bafy2bzacec4wk7ium32gb5flemt5dzys35kibinsb7t5bgxvvuifjpki77sw4",
+    "startCommId": 1264207785,
+    "stopCommId": 1291364856
+  },
+  {
+    "client": "f01916961",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/523",
+    "mcid": "bafy2bzacea4p7yonzwe4lnwsmupxozlyl22wtb7qqqrpkr4te7s5efes4ly4k",
+    "startCommId": 1303308242,
+    "stopCommId": 1308145118
+  },
+  {
+    "client": "f01857951",
+    "notary": "f01924203",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/388",
+    "mcid": "bafy2bzaceaceecngt5zbnc7qi3ncxo2smzjvx4vfxwxwh43h5sdmthyynarja",
+    "startCommId": 1259190177,
+    "stopCommId": 1264262413
+  },
+  {
+    "client": "f01788135",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/324",
+    "mcid": "bafy2bzaceckos4n42akofgfbfwhwvelnborcrnu5qvsxwcsrfr6u2hzzcdluu",
+    "startCommId": 1262393133,
+    "stopCommId": 1263189422
+  },
+  {
+    "client": "f01943532",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1117",
+    "mcid": "bafy2bzaceda4cyzhznysm4772hxxrzdnuxdoafph4a32ak7rqzwpchrml5z7s",
+    "startCommId": 1288690199,
+    "stopCommId": 1301982631
+  },
+  {
+    "client": "f01936823",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/962",
+    "mcid": "bafy2bzaceckfoha5gp432tuafqlqs6mkqnv4obiujwmdt7j2z4t5gg5eht7g4",
+    "startCommId": 1303308223,
+    "stopCommId": 1311122001
+  },
+  {
+    "client": "f01870057",
+    "notary": "f01924200",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/431",
+    "mcid": "bafy2bzaceadlkbuzpbtnykmivwblif65uuiwghjadvhegsrto5wyhuwhhv2t4",
+    "startCommId": 1259191611,
+    "stopCommId": 1312531753
+  },
+  {
+    "client": "f0397376",
+    "notary": "f01105812",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/2",
+    "mcid": "bafy2bzacecrzum3uwnfurycr7qlpjqompnob2gtocqtah6x6k7yd7zmg5dwvw",
+    "startCommId": 897879483,
+    "stopCommId": 909822923
+  },
+  {
+    "client": "f01848528",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/391",
+    "mcid": "bafy2bzacebkzpd3jpdt35isses7mvabk45t55wndqdz2v4meop2i7azxrac5e",
+    "startCommId": 1322444685,
+    "stopCommId": 1325703263
+  },
+  {
+    "client": "f022341",
+    "notary": "f01403243",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/78",
+    "mcid": "bafy2bzacebt5mdrnm3nhjq46e5nzorebuhv4ydxrkneokhzzgzsqhomdzihhg",
+    "startCommId": 954159915,
+    "stopCommId": 954858360
+  },
+  {
+    "client": "f01103201",
+    "notary": "f01105948",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/11",
+    "mcid": "bafy2bzacecyv5iv7zdiwkskvwg45jhq6nod4x52bbudpf6qeius4bcw4d7c2g",
+    "startCommId": 912203242,
+    "stopCommId": 914574543
+  },
+  {
+    "client": "f01787692",
+    "notary": "f01782465",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/293",
+    "mcid": "bafy2bzaceaz4tzfedyk7fpgczbpj7ptzx2kv3bd57nmzvwov2scrvok3gylte",
+    "startCommId": 1149598767,
+    "stopCommId": 1169486746
+  },
+  {
+    "client": "f01948518",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/528",
+    "mcid": "bafy2bzacecjtwnh2n5tsn3wzi5povhkx5klgksy6b62vfhocdsvkjle2f6nr6",
+    "startCommId": 1289953413,
+    "stopCommId": 1301977954
+  },
+  {
+    "client": "f01941661",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1080",
+    "mcid": "bafy2bzacec4rerwxsvn2ecf6zdiehuh2xwyojvx5obtlpch5l2e7srpglyavq",
+    "startCommId": 1303308225,
+    "stopCommId": 1304412979
+  },
+  {
+    "client": "f01656452",
+    "notary": "f01726223",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/181",
+    "mcid": "bafy2bzacebyyl2vk4skelxhinuq6hjsdsibqsbiiorowrseidibnijt6vgh22",
+    "startCommId": 1039357591,
+    "stopCommId": 1054282513
+  },
+  {
+    "client": "f01251071",
+    "notary": "f01322599",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/51",
+    "mcid": "bafy2bzaceb7em5wxeku76hjwgiigokjcglvuwwxm67ntjej5avabqtua36dfg",
+    "startCommId": 1050761025,
+    "stopCommId": 1075276786
+  },
+  {
+    "client": "f01872946",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/419",
+    "mcid": "bafy2bzacebxnzrlfiyng2zvcfyup2jzufh3g3jq7ipavtgnu4trnaritkwej2",
+    "startCommId": 1217798329,
+    "stopCommId": 1218302255
+  },
+  {
+    "client": "f02002177",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/1496",
+    "mcid": "bafy2bzacedvtlsi4oneqbxxtrz7gc6iwzjkqgqjfqpgmxmyt3f7jspnya6oxm",
+    "startCommId": 1381085110,
+    "stopCommId": 1409715177
+  },
+  {
+    "client": "f01884194",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/509",
+    "mcid": "bafy2bzaceb2gvnrpsvr4zp7gpwkv7ux6no3sbwn5ouingfkeiok6y3v47d4fo",
+    "startCommId": 1273612128,
+    "stopCommId": 1311203323
+  },
+  {
+    "client": "f01916961",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/523",
+    "mcid": "bafy2bzacebgvnzyqzem5e4w27iewyom53zk264xj4gz2co2qed74rizvqilmq",
+    "startCommId": 1344822642,
+    "stopCommId": 1375175429
+  },
+  {
+    "client": "f01856640",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/386",
+    "mcid": "bafy2bzaceayxla6cyhr4hcbmpdzoewemgzketwmhtvjkam3wyxhlyo4jbjs6e",
+    "startCommId": 1217798324,
+    "stopCommId": 1220769362
+  },
+  {
+    "client": "f01837711",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/483",
+    "mcid": "bafy2bzaceas7ti2iwzqqavdittbejtxdud6ar5f4krqqxubo5nccz7wbyvby6",
+    "startCommId": 1289167609,
+    "stopCommId": 1291075582
+  },
+  {
+    "client": "f01513510",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/225",
+    "mcid": "bafy2bzaceafm252lm7mwtysv6wlgk67bvegxbxidiztouxj4xsn7jy6wwc3y4",
+    "startCommId": 1169785414,
+    "stopCommId": 1249038172
+  },
+  {
+    "client": "f01902002",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/628",
+    "mcid": "bafy2bzaceagft5pj7ebpucm2ojx6czh5425jj6ayvbjc6b4usvmtzrk344c3s",
+    "startCommId": 1303308236,
+    "stopCommId": 1306995921
+  },
+  {
+    "client": "f01904773",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/702",
+    "mcid": "bafy2bzacea5qeuwr4nipz5saimmwqxrzudcaly2pa53xs32g4l6pncoxtfeeu",
+    "startCommId": 1267917950,
+    "stopCommId": 1291833875
+  },
+  {
+    "client": "f01916544",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/881",
+    "mcid": "bafy2bzacec6qtlco4ygqplzhcsugwa2jhwjfwn3u3eeypotg6jtafd4xybvle",
+    "startCommId": 1273621909,
+    "stopCommId": 1290150903
+  },
+  {
+    "client": "f01872918",
+    "notary": "f01858410",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/456",
+    "mcid": "bafy2bzaceamey4u7dialtkdgdnewhdevuyrpyelg4svba5muxbopkfkthng6a",
+    "startCommId": 1245183210,
+    "stopCommId": 1247752794
+  },
+  {
+    "client": "f01864590",
+    "notary": "f01885534",
+    "auditTrail": "https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/425",
+    "mcid": "bafy2bzacebw6xy72vmxtqawuq76is7oikuuw3s45thyyrbrlp2wtigz67cotc",
+    "startCommId": 1208667627,
+    "stopCommId": 1209022714
+  }
+]
