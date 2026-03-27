@@ -10,7 +10,6 @@ import { Between, EntityManager, Repository } from 'typeorm';
 
 import { VerifierAllowance as TracerVerifierAllowance } from '../tracerEntities/verifierAllowance.entity';
 import { error, log } from 'console';
-import { SCRAPER_SECONDARY_DB } from 'src/modules/database-config/scraperSecondary.providers';
 
 @Injectable()
 export class FetchTracerVerifierAllowancesConsumer implements IConsumer {
@@ -24,7 +23,7 @@ export class FetchTracerVerifierAllowancesConsumer implements IConsumer {
         @InjectRepository(TracerVerifierAllowance, TRACER_DB)
         private tracerVerifierAllowanceRepository: Repository<TracerVerifierAllowance>,
 
-        @InjectEntityManager(SCRAPER_SECONDARY_DB)
+        @InjectEntityManager()
         private entityManager: EntityManager,
 
     ) { }

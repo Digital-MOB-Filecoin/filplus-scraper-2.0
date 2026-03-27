@@ -16,13 +16,6 @@ export default registerAs('config', () => {
       password: process.env.TRACER_DB_PASSWORD,
       database: process.env.TRACER_DB_DATABASE_NAME,
     },
-    scraperSecondaryDatabase: {
-      host: process.env.SCRAPER_SECONDARY_DB_HOST,
-      port: parseInt(process.env.SCRAPER_SECONDARY_DB_PORT, 10),
-      username: process.env.SCRAPER_SECONDARY_DB_USERNAME,
-      password: process.env.SCRAPER_SECONDARY_DB_PASSWORD,
-      database: process.env.SCRAPER_SECONDARY_DB_DATABASE_NAME,
-    },
     app: {
       port: parseInt(process.env.APP_PORT, 10),
     },

@@ -49,7 +49,6 @@ import { ethers } from "ethers";
 import { MetaAllocator } from 'submodules/filecoin-plus-scraper-entities/metaAllocator.entity';
 import { ScraperUtilsService } from './utils/scraper.utils.service';
 import { TRACER_DB } from '../database-config/tracer.providers';
-import { SCRAPER_SECONDARY_DB } from '../database-config/scraperSecondary.providers';
 
 @Injectable()
 export class ScraperService {
@@ -87,7 +86,7 @@ export class ScraperService {
     @InjectRepository(TracerDeal, TRACER_DB)
     private tracerDealRepository: Repository<TracerDeal>,
 
-    @InjectRepository(GlobalValues, SCRAPER_SECONDARY_DB)
+    @InjectRepository(GlobalValues)
     private secondaryGlobalValuesRepository: Repository<GlobalValues>,
 
     @Inject('ASYNC_RABBITMQ_CONNECTION')

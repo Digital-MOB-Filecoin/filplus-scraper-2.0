@@ -25,10 +25,6 @@ import {
   TRACER_DB,
   TypeOrmSecondaryWithTimeoutConfigService,
 } from './modules/database-config/tracer.providers';
-import {
-  SCRAPER_SECONDARY_DB,
-  TypeOrmScraperSecondaryConfigService,
-} from './modules/database-config/scraperSecondary.providers';
 
 @Module({
   imports: [
@@ -55,12 +51,6 @@ import {
       name: TRACER_DB,
       imports: [DatabaseConfigModule],
       useExisting: TypeOrmSecondaryWithTimeoutConfigService,
-    }),
-
-    TypeOrmModule.forRootAsync({
-      name: SCRAPER_SECONDARY_DB,
-      imports: [DatabaseConfigModule],
-      useExisting: TypeOrmScraperSecondaryConfigService,
     }),
 
     RabbitMQModule,

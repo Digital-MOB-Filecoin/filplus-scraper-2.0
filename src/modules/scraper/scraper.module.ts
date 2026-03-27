@@ -86,7 +86,6 @@ import { MessageToDcAllocation } from 'submodules/filecoin-plus-scraper-entities
 import { TempDcAllocationMessages } from 'submodules/filecoin-plus-scraper-entities/tempDcAllocationMessages';
 import { GhAllocatorInfoV2 } from 'submodules/filecoin-plus-scraper-entities/ghAllocatorInfoV2.entity';
 import { TRACER_DB } from '../database-config/tracer.providers';
-import { SCRAPER_SECONDARY_DB } from '../database-config/scraperSecondary.providers';
 
 @Module({
   imports: [
@@ -160,11 +159,6 @@ import { SCRAPER_SECONDARY_DB } from '../database-config/scraperSecondary.provid
     TypeOrmModule.forFeature(
       [TracerVerifierAllowance, TracerVerifiedClientAllowance, TracerDeal, TracerAllocation],
       TRACER_DB,
-    ),
-
-    TypeOrmModule.forFeature(
-      [VerifierAllowance, GlobalValues],
-      SCRAPER_SECONDARY_DB,
     ),
   ],
   providers: [

@@ -9,7 +9,6 @@ import { TRACER_DB } from 'src/modules/database-config/tracer.providers';
 import { Between, EntityManager, Repository } from 'typeorm';
 
 import { Deal as TracerDeal } from '../tracerEntities/deal.entity';
-import { SCRAPER_SECONDARY_DB } from 'src/modules/database-config/scraperSecondary.providers';
 
 @Injectable()
 export class FetchTracerDealsConsumer implements IConsumer {
@@ -23,7 +22,7 @@ export class FetchTracerDealsConsumer implements IConsumer {
         @InjectRepository(TracerDeal, TRACER_DB)
         private tracerDealRepository: Repository<TracerDeal>,
 
-        @InjectEntityManager(SCRAPER_SECONDARY_DB)
+        @InjectEntityManager()
         private entityManager: EntityManager,
 
     ) { }
