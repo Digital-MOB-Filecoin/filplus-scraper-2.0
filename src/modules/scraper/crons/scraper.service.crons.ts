@@ -83,10 +83,10 @@ export class ScraperServiceCrons {
   }
 
   //sync scraper db copy with tracer 
-  @EnhancedCron(
-    CronExpression.EVERY_2_HOURS,
-    CronExpression.EVERY_2_HOURS,
-  )
+  // @EnhancedCron(
+  //   CronExpression.EVERY_2_HOURS,
+  //   CronExpression.EVERY_2_HOURS,
+  // )
   async syncTracerVerifierAllowances() {
     await this.cronUtilsService.executeCron(
       'syncTracerVerifierAllowances',
@@ -95,10 +95,10 @@ export class ScraperServiceCrons {
     );
   }
 
-  @EnhancedCron(
-    CronExpression.EVERY_2_HOURS,
-    CronExpression.EVERY_2_HOURS,
-  )
+  // @EnhancedCron(
+  //   CronExpression.EVERY_2_HOURS,
+  //   CronExpression.EVERY_2_HOURS,
+  // )
   async syncTracerVerifiedClientAllowances() {
     await this.cronUtilsService.executeCron(
       'syncTracerVerifiedClientAllowances',
@@ -107,10 +107,10 @@ export class ScraperServiceCrons {
     );
   }
 
-  @EnhancedCron(
-    CronExpression.EVERY_2_HOURS,
-    CronExpression.EVERY_2_HOURS,
-  )
+  // @EnhancedCron(
+  //   CronExpression.EVERY_2_HOURS,
+  //   CronExpression.EVERY_2_HOURS,
+  // )
   async syncTracerDeals() {
     await this.cronUtilsService.executeCron(
       'syncTracerDeals',
