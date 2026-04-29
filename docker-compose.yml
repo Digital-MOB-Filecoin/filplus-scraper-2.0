@@ -33,7 +33,7 @@ services:
       POSTGRES_DB: ${DB_DATABASE_NAME}
       PG_DATA: /var/lib/postgresql/data
     ports:
-      - 5432:5432
+      - 8432:5432
     volumes:
       - ../pgdata-scraper-2.0:/var/lib/postgresql/data
 

@@ -95,6 +95,20 @@ export class RabbitMQService {
     await this.declareQueue(
       this.channel1,
       'scraper',
+      'fetchTracerVirtualVerifierAllowances',
+      'fetchTracerVirtualVerifierAllowances',
+    );
+
+    await this.declareQueue(
+      this.channel1,
+      'scraper',
+      'fetchTracerVirtualVerifiedClientAllowances',
+      'fetchTracerVirtualVerifiedClientAllowances',
+    );
+
+    await this.declareQueue(
+      this.channel1,
+      'scraper',
       'fetchTracerDeals',
       'fetchTracerDeals',
     );

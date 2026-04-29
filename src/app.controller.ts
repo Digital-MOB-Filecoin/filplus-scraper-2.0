@@ -51,9 +51,23 @@ export class AppController {
   }
 
   @ApiExcludeEndpoint()
+  @Get('/util/syncTracerVirtualVerifierAllowances')
+  async syncTracerVirtualVerifierAllowances(): Promise<string> {
+    await this.scraperService.syncTracerVirtualVerifierAllowances();
+    return 'done';
+  }
+
+  @ApiExcludeEndpoint()
   @Get('/util/syncTracerVerifiedClientAllowances')
   async syncTracerVerifiedClientAllowances(): Promise<string> {
     await this.scraperService.syncTracerVerifiedClientAllowances();
+    return 'done';
+  }
+
+  @ApiExcludeEndpoint()
+  @Get('/util/syncTracerVirtualVerifiedClientAllowances')
+  async syncTracerVirtualVerifiedClientAllowances(): Promise<string> {
+    await this.scraperService.syncTracerVirtualVerifiedClientAllowances();
     return 'done';
   }
 

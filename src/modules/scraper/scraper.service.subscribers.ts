@@ -11,6 +11,8 @@ import { ProcessClaimsBatchConsumer } from './consumers/processClaimsBatch';
 import { FetchTracerVerifierAllowancesConsumer } from './consumers/fetchTracerVerifierAllowances';
 import { FetchTracerVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVerifiedClientAllowances';
 import { FetchTracerDealsConsumer } from './consumers/fetchTracerDeals';
+import { FetchTracerVirtualVerifierAllowancesConsumer } from './consumers/fetchTracerVirtualVerifierAllowances';
+import { FetchTracerVirtualVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVirtualVerifiedClientAllowances';
 
 
 @Injectable()
@@ -26,6 +28,8 @@ export class ScraperServiceSubscribers {
     protected readonly processClaimsBatchConsumer: ProcessClaimsBatchConsumer,
     protected readonly fetchTracerVerifierAllowancesConsumer: FetchTracerVerifierAllowancesConsumer,
     protected readonly fetchTracerVerifiedClientAllowancesConsumer: FetchTracerVerifiedClientAllowancesConsumer,
+    protected readonly fetchTracerVirtualVerifierAllowancesConsumer: FetchTracerVirtualVerifierAllowancesConsumer,
+    protected readonly fetchTracerVirtualVerifiedClientAllowancesConsumer: FetchTracerVirtualVerifiedClientAllowancesConsumer,
     protected readonly fetchTracerDealsConsumer: FetchTracerDealsConsumer,
 
     @Inject('ASYNC_RABBITMQ_CONNECTION')
@@ -77,6 +81,16 @@ export class ScraperServiceSubscribers {
 
     this.rabbitMQService.attachConsumer(
       this.fetchTracerVerifiedClientAllowancesConsumer,
+      this.rabbitMQService.channel1,
+    );
+
+    this.rabbitMQService.attachConsumer(
+      this.fetchTracerVirtualVerifierAllowancesConsumer,
+      this.rabbitMQService.channel1,
+    );
+
+    this.rabbitMQService.attachConsumer(
+      this.fetchTracerVirtualVerifiedClientAllowancesConsumer,
       this.rabbitMQService.channel1,
     );
 

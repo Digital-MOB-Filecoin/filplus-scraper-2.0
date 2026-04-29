@@ -76,7 +76,7 @@ export class FetchTracerVerifierAllowancesConsumer implements IConsumer {
                         createMessageTimestamp: 1598306400 + allowance.height * 30,
                         msgCID: allowance.msgCid,
                         allowance: Number(allowance.allowance),
-                        isVirtual: allowance.type === 'meta-allocator'
+                        isVirtual: false
                     });
                     await this.verifierAllowanceRepository.save(newAllowance);
                 }
@@ -101,11 +101,7 @@ export class FetchTracerVerifierAllowancesConsumer implements IConsumer {
                     verifier.createMessageTimestamp = 1598306400 + allowance.height * 30;
                     verifier.isMultisig = false;
                     verifier.auditTrail = 'n/a';
-                    if (allowance.type === 'meta-allocator') {
-                        verifier.isVirtual = true;
-                        // verifier.addressEth = dcVerifierUpdate.verifierAddressEth;
-                        // verifier.dcSource = dcVerifierUpdate.dcSource;
-                    }
+                    verifier.isVirtual = false;
 
                 } else {
                     let updatedAllowance = BigInt(verifier.initialAllowance);
@@ -113,11 +109,7 @@ export class FetchTracerVerifierAllowancesConsumer implements IConsumer {
                         BigInt(allowance.allowance);
 
                     verifier.initialAllowance = Number(updatedAllowance);
-
-                    if (allowance.type === 'meta-allocator') {
-                        verifier.isVirtual = true;
-                        // verifier.addressEth = dcVerifierUpdate.verifierAddressEth;
-                    }
+                    verifier.isVirtual = false;
                 }
                 await this.verifiersRepository.save(verifier);
 

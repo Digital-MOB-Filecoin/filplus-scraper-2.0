@@ -5,9 +5,11 @@ import { VerifierAllowance } from '../scraper/tracerEntities/verifierAllowance.e
 import { VerifiedClientAllowance } from '../scraper/tracerEntities/verifiedClientAllowance.entity';
 import { Deal } from '../scraper/tracerEntities/deal.entity';
 import { Allocation } from '../scraper/tracerEntities/allocation.entity';
+import { VirtualVerifiedClientAllowance } from '../scraper/tracerEntities/virtualVerifiedClientAllowance.entity';
+import { VirtualVerifierAllowance } from '../scraper/tracerEntities/virtualVerifierAllowance.entity';
 
 // TODO: Add db entities here
-const entities = [VerifierAllowance, VerifiedClientAllowance, Deal, Allocation];
+const entities = [VerifierAllowance, VerifiedClientAllowance, Deal, Allocation, VirtualVerifierAllowance, VirtualVerifiedClientAllowance];
 
 @Injectable()
 export class TypeOrmSecondaryWithTimeoutConfigService

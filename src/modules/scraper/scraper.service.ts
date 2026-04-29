@@ -28,6 +28,9 @@ import { RabbitMQService } from '../rabbitmq/rabbitmq.service';
 import { VerifierAllowance } from '../../../submodules/filecoin-plus-scraper-entities/verifierAllowance.entity';
 import { VerifierAllowance as TracerVerifierAllowance } from './tracerEntities/verifierAllowance.entity';
 import { VerifiedClientAllowance as TracerVerifiedClientAllowance } from './tracerEntities/verifiedClientAllowance.entity';
+import { VirtualVerifierAllowance as TracerVirtualVerifierAllowance } from './tracerEntities/virtualVerifierAllowance.entity';
+import { VirtualVerifiedClientAllowance as TracerVirtualVerifiedClientAllowance } from './tracerEntities/virtualVerifiedClientAllowance.entity';
+
 import { Deal as TracerDeal } from './tracerEntities/deal.entity';
 
 import { VerifiedClientAllowance } from '../../../submodules/filecoin-plus-scraper-entities/verifiedClientAllowance.entity';
@@ -82,6 +85,12 @@ export class ScraperService {
 
     @InjectRepository(TracerVerifiedClientAllowance, TRACER_DB)
     private tracerVerifiedClientAllowanceRepository: Repository<TracerVerifiedClientAllowance>,
+
+    @InjectRepository(TracerVirtualVerifierAllowance, TRACER_DB)
+    private tracerVirtualVerifierAllowanceRepository: Repository<TracerVirtualVerifierAllowance>,
+
+    @InjectRepository(TracerVirtualVerifiedClientAllowance, TRACER_DB)
+    private tracerVirtualVerifiedClientAllowanceRepository: Repository<TracerVirtualVerifiedClientAllowance>,
 
     @InjectRepository(TracerDeal, TRACER_DB)
     private tracerDealRepository: Repository<TracerDeal>,
@@ -696,6 +705,59 @@ export class ScraperService {
     );
   }
 
+  async syncTracerVirtualVerifierAllowances() {
+    const intervalSize = 3;
+    // fetch last synced id from db
+    let lastSyncedAllowance = await this.secondaryGlobalValuesRepository.findOne({ where: { key: 'lastSyncedTracerVirtualVerifierAllowanceId' } });
+    if (!lastSyncedAllowance) {
+      lastSyncedAllowance = this.secondaryGlobalValuesRepository.create({
+        key: 'lastSyncedTracerVirtualVerifierAllowanceId',
+        value: '0',
+      });
+    }
+    const lastSyncedId = parseInt(lastSyncedAllowance.value);
+    Logger.log(
+      `Last synced tracer virtual verifier allowance id: ${lastSyncedId}`,
+      'SyncTracerVirtualVerifierAllowances',
+    );
+
+    // fetch the latest id from tracer db
+
+    Logger.log(await this.tracerVirtualVerifierAllowanceRepository.find(), 'latest allowance');
+    const latestAllowance = await this.tracerVirtualVerifierAllowanceRepository.maximum('id');
+    const latestId = latestAllowance ? latestAllowance : 0;
+    Logger.log(
+      `Latest tracer virtual verifier allowance id in the database: ${latestId}`,
+      'SyncTracerVirtualVerifierAllowances',
+    );
+
+    // generate messages to fetch allowances for all ids between last synced and latest in batches of 1000
+    let batchStartId = lastSyncedId + 1;
+
+    while (batchStartId < latestId) {
+      await this.rabbitMQService.publish(
+        'scraper',
+        'fetchTracerVirtualVerifierAllowances',
+        JSON.stringify({ startId: batchStartId, latestId }),
+      );
+
+      Logger.log(
+        `Published message to fetch tracer virtual verifier allowances for ids between ${batchStartId} and latest ${latestId}`,
+        'SyncTracerVirtualVerifierAllowances',
+      );
+
+      batchStartId += intervalSize;
+    }
+
+    lastSyncedAllowance.value = latestId.toString();
+    await this.secondaryGlobalValuesRepository.save(lastSyncedAllowance);
+
+    Logger.log(
+      `Finished`,
+      'SyncTracerVirtualVerifierAllowances',
+    );
+  }
+
   async syncTracerVerifiedClientAllowances() {
     const intervalSize = 3;
     // fetch last synced id from db
@@ -745,6 +807,58 @@ export class ScraperService {
     Logger.log(
       `Finished`,
       'SyncTracerVerifiedClientAllowances',
+    );
+  }
+
+  async syncTracerVirtualVerifiedClientAllowances() {
+    const intervalSize = 3;
+    // fetch last synced id from db
+    let lastSyncedAllowance = await this.secondaryGlobalValuesRepository.findOne({ where: { key: 'lastSyncedTracerVirtualVerifiedClientAllowanceId' } });
+    if (!lastSyncedAllowance) {
+      lastSyncedAllowance = this.secondaryGlobalValuesRepository.create({
+        key: 'lastSyncedTracerVirtualVerifiedClientAllowanceId',
+        value: '0',
+      });
+    }
+    const lastSyncedId = parseInt(lastSyncedAllowance.value);
+    Logger.log(
+      `Last synced tracer virtual verified client allowance id: ${lastSyncedId}`,
+      'SyncTracerVirtualVerifiedClientAllowances',
+    );
+
+    // fetch the latest id from tracer db
+
+    const latestAllowance = await this.tracerVirtualVerifiedClientAllowanceRepository.maximum('id');
+    const latestId = latestAllowance ? latestAllowance : 0;
+    Logger.log(
+      `Latest tracer virtual verified client allowance id in the database: ${latestId}`,
+      'SyncTracerVirtualVerifiedClientAllowances',
+    );
+
+    // generate messages to fetch allowances for all ids between last synced and latest in batches of 1000
+    let batchStartId = lastSyncedId + 1;
+
+    while (batchStartId < latestId) {
+      await this.rabbitMQService.publish(
+        'scraper',
+        'fetchTracerVirtualVerifiedClientAllowances',
+        JSON.stringify({ startId: batchStartId, latestId }),
+      );
+
+      Logger.log(
+        `Published message to fetch tracer virtual verified client allowances for ids between ${batchStartId} and latest ${latestId}`,
+        'SyncTracerVirtualVerifiedClientAllowances',
+      );
+
+      batchStartId += intervalSize;
+    }
+
+    lastSyncedAllowance.value = latestId.toString();
+    await this.secondaryGlobalValuesRepository.save(lastSyncedAllowance);
+
+    Logger.log(
+      `Finished`,
+      'SyncTracerVirtualVerifiedClientAllowances',
     );
   }
 

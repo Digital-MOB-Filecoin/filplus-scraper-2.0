@@ -67,6 +67,8 @@ import { ProcessClaimsBatchConsumer } from './consumers/processClaimsBatch';
 import { FetchTracerVerifierAllowancesConsumer } from './consumers/fetchTracerVerifierAllowances';
 import { FetchTracerVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVerifiedClientAllowances';
 import { FetchTracerDealsConsumer } from './consumers/fetchTracerDeals';
+import { FetchTracerVirtualVerifierAllowancesConsumer } from './consumers/fetchTracerVirtualVerifierAllowances';
+import { FetchTracerVirtualVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVirtualVerifiedClientAllowances';
 
 
 import { READ_DB_WITH_TIMEOUT } from '../database-config/databaseReadOnlyWithTimeout.providers';
@@ -86,6 +88,8 @@ import { MessageToDcAllocation } from 'submodules/filecoin-plus-scraper-entities
 import { TempDcAllocationMessages } from 'submodules/filecoin-plus-scraper-entities/tempDcAllocationMessages';
 import { GhAllocatorInfoV2 } from 'submodules/filecoin-plus-scraper-entities/ghAllocatorInfoV2.entity';
 import { TRACER_DB } from '../database-config/tracer.providers';
+import { VirtualVerifierAllowance } from './tracerEntities/virtualVerifierAllowance.entity';
+import { VirtualVerifiedClientAllowance } from './tracerEntities/virtualVerifiedClientAllowance.entity';
 
 @Module({
   imports: [
@@ -157,7 +161,7 @@ import { TRACER_DB } from '../database-config/tracer.providers';
     ),
 
     TypeOrmModule.forFeature(
-      [TracerVerifierAllowance, TracerVerifiedClientAllowance, TracerDeal, TracerAllocation],
+      [TracerVerifierAllowance, TracerVerifiedClientAllowance, TracerDeal, TracerAllocation, VirtualVerifierAllowance, VirtualVerifiedClientAllowance],
       TRACER_DB,
     ),
   ],
@@ -178,6 +182,8 @@ import { TRACER_DB } from '../database-config/tracer.providers';
     ProcessClaimsBatchConsumer,
     FetchTracerVerifierAllowancesConsumer,
     FetchTracerVerifiedClientAllowancesConsumer,
+    FetchTracerVirtualVerifierAllowancesConsumer,
+    FetchTracerVirtualVerifiedClientAllowancesConsumer,
     FetchTracerDealsConsumer,
     GithubApiScraper,
     GithubKeykoJsonScraper,
