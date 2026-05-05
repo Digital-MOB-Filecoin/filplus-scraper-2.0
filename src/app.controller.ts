@@ -79,6 +79,13 @@ export class AppController {
   }
 
   @ApiExcludeEndpoint()
+  @Get('/util/syncAllTracerData')
+  async syncAllTracerData(): Promise<string> {
+    await this.scraperService.syncAllTracerData();
+    return 'done';
+  }
+
+  @ApiExcludeEndpoint()
   @Get('/util/getMetaAllocatorsFromFactory')
   async getMetaAllocatorsFromFactory(): Promise<string> {
     await this.scraperService.getMetaAllocatorsFromFactory();

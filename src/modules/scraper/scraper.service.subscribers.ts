@@ -11,6 +11,7 @@ import { ProcessClaimsBatchConsumer } from './consumers/processClaimsBatch';
 import { FetchTracerVerifierAllowancesConsumer } from './consumers/fetchTracerVerifierAllowances';
 import { FetchTracerVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVerifiedClientAllowances';
 import { FetchTracerDealsConsumer } from './consumers/fetchTracerDeals';
+import { SyncTracerDataConsumer } from './consumers/syncTracerData';
 import { FetchTracerVirtualVerifierAllowancesConsumer } from './consumers/fetchTracerVirtualVerifierAllowances';
 import { FetchTracerVirtualVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVirtualVerifiedClientAllowances';
 
@@ -31,6 +32,7 @@ export class ScraperServiceSubscribers {
     protected readonly fetchTracerVirtualVerifierAllowancesConsumer: FetchTracerVirtualVerifierAllowancesConsumer,
     protected readonly fetchTracerVirtualVerifiedClientAllowancesConsumer: FetchTracerVirtualVerifiedClientAllowancesConsumer,
     protected readonly fetchTracerDealsConsumer: FetchTracerDealsConsumer,
+    protected readonly syncTracerDataConsumer: SyncTracerDataConsumer,
 
     @Inject('ASYNC_RABBITMQ_CONNECTION')
     protected readonly rabbitMQService: RabbitMQService,
@@ -96,6 +98,11 @@ export class ScraperServiceSubscribers {
 
     this.rabbitMQService.attachConsumer(
       this.fetchTracerDealsConsumer,
+      this.rabbitMQService.channel1,
+    );
+
+    this.rabbitMQService.attachConsumer(
+      this.syncTracerDataConsumer,
       this.rabbitMQService.channel1,
     );
     console.log(`The module has been initialized.`);

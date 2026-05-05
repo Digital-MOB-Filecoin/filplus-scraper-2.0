@@ -118,4 +118,16 @@ export class ScraperServiceCrons {
       [],
     );
   }
+
+  @EnhancedCron(
+    CronExpression.EVERY_4_HOURS,
+    CronExpression.EVERY_4_HOURS,
+  )
+  async syncAllTracerData() {
+    await this.cronUtilsService.executeCron(
+      'syncAllTracerData',
+      'scraperService',
+      [],
+    );
+  }
 }

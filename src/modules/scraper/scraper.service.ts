@@ -684,8 +684,8 @@ export class ScraperService {
     while (batchStartId < latestId) {
       await this.rabbitMQService.publish(
         'scraper',
-        'fetchTracerVerifierAllowances',
-        JSON.stringify({ startId: batchStartId, latestId }),
+        'syncTracerData',
+        JSON.stringify({ type: 'fetchTracerVerifierAllowances', msg: { startId: batchStartId, latestId } }),
       );
 
       Logger.log(
@@ -706,7 +706,7 @@ export class ScraperService {
   }
 
   async syncTracerVirtualVerifierAllowances() {
-    const intervalSize = 3;
+    const intervalSize = 1000;
     // fetch last synced id from db
     let lastSyncedAllowance = await this.secondaryGlobalValuesRepository.findOne({ where: { key: 'lastSyncedTracerVirtualVerifierAllowanceId' } });
     if (!lastSyncedAllowance) {
@@ -737,8 +737,8 @@ export class ScraperService {
     while (batchStartId < latestId) {
       await this.rabbitMQService.publish(
         'scraper',
-        'fetchTracerVirtualVerifierAllowances',
-        JSON.stringify({ startId: batchStartId, latestId }),
+        'syncTracerData',
+        JSON.stringify({ type: 'fetchTracerVirtualVerifierAllowances', msg: { startId: batchStartId, latestId } }),
       );
 
       Logger.log(
@@ -759,7 +759,7 @@ export class ScraperService {
   }
 
   async syncTracerVerifiedClientAllowances() {
-    const intervalSize = 3;
+    const intervalSize = 1000;
     // fetch last synced id from db
     let lastSyncedAllowance = await this.secondaryGlobalValuesRepository.findOne({ where: { key: 'lastSyncedTracerVerifiedClientAllowanceId' } });
     if (!lastSyncedAllowance) {
@@ -789,8 +789,8 @@ export class ScraperService {
     while (batchStartId < latestId) {
       await this.rabbitMQService.publish(
         'scraper',
-        'fetchTracerVerifiedClientAllowances',
-        JSON.stringify({ startId: batchStartId, latestId }),
+        'syncTracerData',
+        JSON.stringify({ type: 'fetchTracerVerifiedClientAllowances', msg: { startId: batchStartId, latestId } }),
       );
 
       Logger.log(
@@ -811,7 +811,7 @@ export class ScraperService {
   }
 
   async syncTracerVirtualVerifiedClientAllowances() {
-    const intervalSize = 3;
+    const intervalSize = 1000;
     // fetch last synced id from db
     let lastSyncedAllowance = await this.secondaryGlobalValuesRepository.findOne({ where: { key: 'lastSyncedTracerVirtualVerifiedClientAllowanceId' } });
     if (!lastSyncedAllowance) {
@@ -841,8 +841,8 @@ export class ScraperService {
     while (batchStartId < latestId) {
       await this.rabbitMQService.publish(
         'scraper',
-        'fetchTracerVirtualVerifiedClientAllowances',
-        JSON.stringify({ startId: batchStartId, latestId }),
+        'syncTracerData',
+        JSON.stringify({ type: 'fetchTracerVirtualVerifiedClientAllowances', msg: { startId: batchStartId, latestId } }),
       );
 
       Logger.log(
@@ -893,8 +893,8 @@ export class ScraperService {
     while (batchStartId < latestId) {
       await this.rabbitMQService.publish(
         'scraper',
-        'fetchTracerDeals',
-        JSON.stringify({ startId: batchStartId, latestId }),
+        'syncTracerData',
+        JSON.stringify({ type: 'fetchTracerDeals', msg: { startId: batchStartId, latestId } }),
       );
 
       Logger.log(
@@ -912,5 +912,13 @@ export class ScraperService {
       `Finished`,
       'SyncTracerDeals',
     );
+  }
+
+  async syncAllTracerData() {
+    await this.syncTracerVerifierAllowances();
+    await this.syncTracerVirtualVerifierAllowances();
+    await this.syncTracerVerifiedClientAllowances();
+    await this.syncTracerVirtualVerifiedClientAllowances();
+    await this.syncTracerDeals();
   }
 }

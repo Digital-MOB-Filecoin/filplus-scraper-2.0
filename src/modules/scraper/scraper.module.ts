@@ -67,6 +67,7 @@ import { ProcessClaimsBatchConsumer } from './consumers/processClaimsBatch';
 import { FetchTracerVerifierAllowancesConsumer } from './consumers/fetchTracerVerifierAllowances';
 import { FetchTracerVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVerifiedClientAllowances';
 import { FetchTracerDealsConsumer } from './consumers/fetchTracerDeals';
+import { SyncTracerDataConsumer } from './consumers/syncTracerData';
 import { FetchTracerVirtualVerifierAllowancesConsumer } from './consumers/fetchTracerVirtualVerifierAllowances';
 import { FetchTracerVirtualVerifiedClientAllowancesConsumer } from './consumers/fetchTracerVirtualVerifiedClientAllowances';
 
@@ -185,6 +186,7 @@ import { VirtualVerifiedClientAllowance } from './tracerEntities/virtualVerified
     FetchTracerVirtualVerifierAllowancesConsumer,
     FetchTracerVirtualVerifiedClientAllowancesConsumer,
     FetchTracerDealsConsumer,
+    SyncTracerDataConsumer,
     GithubApiScraper,
     GithubKeykoJsonScraper,
     CronUtilsService,

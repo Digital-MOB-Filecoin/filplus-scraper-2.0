@@ -39,25 +39,26 @@ export class UpdateMultisigAddressConsumer implements IConsumer {
       let robustAddress = filfoxData.match(
         /Robust Address <\/p><p class="flex w-3\/4"><span><span><span class="el-tooltip plain break-all">(.*?)<\/span>/g,
       );
-      robustAddress = robustAddress[0];
+      if (robustAddress && robustAddress.length > 0) {
+        robustAddress = robustAddress[0];
 
-      robustAddress = robustAddress.replace(
-        'Robust Address </p><p class="flex w-3/4"><span><span><span class="el-tooltip plain break-all">',
-        '',
-      ).replace('</span>', '').replace(/\W/g, '');
-      robustAddress = robustAddress.replace('</span>', '');
+        robustAddress = robustAddress.replace(
+          'Robust Address </p><p class="flex w-3/4"><span><span><span class="el-tooltip plain break-all">',
+          '',
+        ).replace('</span>', '').replace(/\W/g, '');
+        robustAddress = robustAddress.replace('</span>', '');
 
-      const verifier = await this.verifiersRepository.findOne({
-        where: {
-          addressId: address,
-        },
-      });
-      verifier.address = '-';
-      if (robustAddress) {
-        verifier.address = robustAddress;
+        const verifier = await this.verifiersRepository.findOne({
+          where: {
+            addressId: address,
+          },
+        });
+        verifier.address = '-';
+        if (robustAddress) {
+          verifier.address = robustAddress;
+        }
+        await this.verifiersRepository.save(verifier);
       }
-      await this.verifiersRepository.save(verifier);
-
       channel.ack(brokerMsg);
     } catch (e) {
       console.log(e);

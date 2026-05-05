@@ -112,6 +112,13 @@ export class RabbitMQService {
       'fetchTracerDeals',
       'fetchTracerDeals',
     );
+
+    await this.declareQueue(
+      this.channel1,
+      'scraper',
+      'syncTracerData',
+      'syncTracerData',
+    );
   }
 
   public async declareExchanges(
